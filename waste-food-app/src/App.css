@@ -1,0 +1,43 @@
+:root{
+  --lightGray:#F5EAEA;
+  --darkGray:#5B5656;
+  --lightGreen:#7FCD91;
+  --myPurple:#EA9ABB;
+  --myLightPurple:#fea5ad;
+  --strongPurple:#f04654;
+  --redWarning: #FF0000;
+}
+body{
+  background: var(--lightGray) !important; 
+}
+.food-list-heading{
+  letter-spacing:1px;
+  color:var(--darkGray);
+  margin: 20px 5px;
+}
+.input-custom:focus{
+  color: var(--darkGray) !important;
+  background-color: #fff;
+  border-color:var(--lightGreen) !important;
+  outline: 0;
+  box-shadow:0 0 0 0.2rem rgba(93, 223, 136, 0.25) !important;
+}
+
+.custom-label{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color:var(--darkGray);
+}
+.w-70{
+  width: 70% !important;
+}
+.w-30{
+  width:30% !important;
+}
+.submit-btn-custom{
+  background-color: var(--myPurple) !important;
+}
+.submit-btn-custom:hover{
+  background-color: var(--lightGreen) !important;
+  color:var(--lightGray) !important;
+}

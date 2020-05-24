@@ -1,0 +1,5 @@
+CREATE TABLE `food_management`.`auth_users` ( `id` INT(3) NOT NULL AUTO_INCREMENT , `username` VARCHAR(50) NOT NULL , `password` VARCHAR(50) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `food_management`.`foods` ( `id` INT(3) NOT NULL AUTO_INCREMENT ,  `name` VARCHAR(90) NOT NULL ,  `description` VARCHAR(100) NOT NULL ,  `category_id` INT(3) NOT NULL ,    PRIMARY KEY  (`id`)) ENGINE = InnoDB;
+ALTER TABLE `foods` ADD `expiration_date` VARCHAR(20) NOT NULL AFTER `category_id`;\ALTER TABLE `foods` ADD `user_id` INT(3) NOT NULL AFTER `id`;
+CREATE TABLE `food_management`.`users` ( `id` INT NOT NULL AUTO_INCREMENT , `user_id` INT(3) NOT NULL , `name` VARCHAR(30) NOT NULL , `email` VARCHAR(40) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+ALTER TABLE `users` ADD `address` VARCHAR(100) NOT NULL AFTER `email`;
